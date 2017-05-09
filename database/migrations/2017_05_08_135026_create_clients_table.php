@@ -32,7 +32,7 @@ class CreateClientsTable extends Migration
           $table->integer('healthcard');
           $table->integer('SIN');
           $table->date('DOB');
-          $table->string('gender');
+          $table->enum('gender', ['male', 'female']);
           $table->string('prim_diagnosis');
           $table->string('sec_diagnosis');
           $table->string('family_doctor');
