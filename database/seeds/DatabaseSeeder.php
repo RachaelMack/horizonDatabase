@@ -13,5 +13,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(OrganizationTableSeeder::class);
         $this->call(ClientTableSeeder::class);
+        $this->call(VoyagerDatabaseSeeder::class);
+        $this->call(VoyagerDummyDatabaseSeeder::class);
+
     }
 }
